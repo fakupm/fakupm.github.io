@@ -1,263 +1,199 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <!--
-	Spectral by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
 -->
-<html>
-	<head>
-		<title>BitsGame</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body class="landing">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design Lite</title>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">BitsGame</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>BitsGame</h2>
-							<p>Una empresa dedicada<br />
-							a juegos en HTML5<br />
-							</p>
-							<!--<ul class="actions">
-								<li><a href="#" class="button special">Activate</a></li>
-							</ul>-->
-						</div>
-						<a href="#one" class="more scrolly">Juegos</a>
-					</section>
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
+    <link rel="shortcut icon" href="images/favicon.png">
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-					</section>
-    <div class="template-wrap clear">
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="350px"></canvas>
-      
-    </div>
-    <script type='text/javascript'>
-  // connect to canvas
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    filePackagePrefixURL: "Release/",
-    memoryInitializerPrefixURL: "Release/",
-    preRun: [],
-    postRun: [],
-    print: (function() {
-      return function(text) {
-        console.log (text);
-      };
-    })(),
-    printErr: function(text) {
-      console.error (text);
-    },
-    canvas: document.getElementById('canvas'),
-    progress: null,
-    setStatus: function(text) {
-      if (this.progress == null) 
-      {
-        if (typeof UnityProgress != 'function')
-          return;
-        this.progress = new UnityProgress (canvas);
-      }
-      if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: '' };
-      if (text === Module.setStatus.text) return;
-      this.progress.SetMessage (text);
-      var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
-      if (m)
-        this.progress.SetProgress (parseInt(m[2])/parseInt(m[4]));
-      if (text === "") 
-        this.progress.Clear()
-    },
-    totalDependencies: 0,
-    monitorRunDependencies: function(left) {
-      this.totalDependencies = Math.max(this.totalDependencies, left);
-      Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
     }
-  };
-  Module.setStatus('Downloading (0.0/1)');
-</script>
-<script src="Release/UnityConfig.js"></script>
-<script src="Release/fileloader.js"></script>
-<script>if (!(!Math.fround)) {
-  var script = document.createElement('script');
-  script.src = "Release/index.js";
-  document.body.appendChild(script);
-} else {
-  var codeXHR = new XMLHttpRequest();
-  codeXHR.open('GET', 'Release/index.js', true);
-  codeXHR.onload = function() {
-    var code = codeXHR.responseText;
-    if (!Math.fround) { 
-try {
-  console.log('optimizing out Math.fround calls');
-  var m = /var ([^=]+)=global\.Math\.fround;/.exec(code);
-  var minified = m[1];
-  if (!minified) throw 'fail';
-  var startAsm = code.indexOf('// EMSCRIPTEN_START_FUNCS');
-  var endAsm = code.indexOf('// EMSCRIPTEN_END_FUNCS');
-  var asm = code.substring(startAsm, endAsm);
-  do {
-    var moar = false; // we need to re-do, as x(x( will not be fixed
-    asm = asm.replace(new RegExp('[^a-zA-Z0-9\\$\\_]' + minified + '\\(', 'g'), function(s) { moar = true; return s[0] + '(' });
-  } while (moar);
-  code = code.substring(0, startAsm) + asm + code.substring(endAsm);
-  code = code.replace("'use asm'", "'almost asm'");
-} catch(e) { console.log('failed to optimize out Math.fround calls ' + e) }
- }
-
-    var blob = new Blob([code], { type: 'text/javascript' });
-    codeXHR = null;
-    var src = URL.createObjectURL(blob);
-    var script = document.createElement('script');
-    script.src = URL.createObjectURL(blob);
-    script.onload = function() {
-      URL.revokeObjectURL(script.src);
-    };
-    document.body.appendChild(script);
-  };
-  codeXHR.send(null);
-}
-</script>
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-headphones">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart-o">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </style>
+  </head>
+  <body>
+    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content">
+        <div class="demo-blog__posts mdl-grid">
+          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Coffee Pic</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+              <i class="material-icons mdl-color-text--white" role="presentation">add</i>
+              <span class="visuallyhidden">add</span>
+            </button>
+            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+              <img src="images/logo.png">
+              +1,337
+            </div>
+            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+              <div>
+                <strong>The Newist</strong>
+              </div>
+              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
+                <li class="mdl-menu__item">About</li>
+                <li class="mdl-menu__item">Message</li>
+                <li class="mdl-menu__item">Favorite</li>
+                <li class="mdl-menu__item">Search</li>
+              </ul>
+              <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons" role="presentation">more_vert</i>
+                <span class="visuallyhidden">show menu</span>
+              </button>
+            </div>
+          </div>
+          <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">On the road again</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__title mdl-color-text--grey-50">
+              <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Shopping</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <nav class="demo-nav mdl-cell mdl-cell--12-col">
+            <div class="section-spacer"></div>
+            <a href="entry.html" class="demo-nav__button" title="show more">
+              More
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons" role="presentation">arrow_forward</i>
+              </button>
+            </a>
+          </nav>
+        </div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+              <span class="visuallyhidden">Twitter</span>
+            </button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+              <span class="visuallyhidden">Facebook</span>
+            </button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+              <span class="visuallyhidden">Google Plus</span>
+            </button>
+          </div>
+          <div class="mdl-mini-footer--right-section">
+            <button class="mdl-mini-footer--social-btn social-btn__share">
+              <i class="material-icons" role="presentation">share</i>
+              <span class="visuallyhidden">share</span>
+            </button>
+          </div>
+        </footer>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <a href="https://github.com/google/material-design-lite/blob/master/templates/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script src="../../material.min.js"></script>
+  </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+  </script>
 </html>
